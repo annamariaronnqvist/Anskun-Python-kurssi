@@ -1,0 +1,8 @@
+print("Hei Anna-Maria Rönnqvist")
+print("Tänään on tarkoitus tehdä laskuohjelma")
+print("ja se tarkoittaa käytännössä \nprint and input funktion käyttöä")
+print('tämä toimii myös')
+print('"ja lainaus on tällainen"')
+print("cool")
+print("tämä on kuin dos teksturi")
+print("nyt mä tein branchin, omg")
