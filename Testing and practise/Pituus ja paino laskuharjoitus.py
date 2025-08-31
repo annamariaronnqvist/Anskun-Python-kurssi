@@ -5,7 +5,7 @@ paino = float(input("Anna painosi: "))
 bmi = paino / (pituus / 100) ** 2
 
 print("Ptuus-paino-painoindeksisi on", bmi)
-print("pituus-paino-painoindeksis on {bmi:.f}")
+#print("pituus-paino-painoindeksis on {bmi:.f}")
 
 #ei ollut
 
