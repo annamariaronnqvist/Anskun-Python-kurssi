@@ -2,7 +2,7 @@
 # onko annettu vuosi karkausvuosi. Vuosi on karkausvuosi,
 # jos se on jaollinen neljällä. Sadalla jaolliset vuodet
 # ovat karkausvuosia vain jos ne ovat jaollisia myös neljälläsadalla.
-from operator import truediv
+
 
 print("Tällä ohjelmalla tsekataan onko vuosi karkausvuosi!")
 vuosi = input("Anna vuosiluku, minä kerron, jos se on karkausvuosi: ")
