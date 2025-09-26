@@ -9,6 +9,4 @@ while number < Max_number:
     print(number)
     #= 0 and number <= 1000:
 
-
-
 print ("nyt on kaikki kolmijaolliset tulostettu")

@@ -3,15 +3,11 @@
 # Lopuksi ohjelma tulostaa saaduista luvuista pienimmän ja suurimman.
 
 number_given = int(input("Anna minulle kokonaisluku"))
-#max_number_str = str(max(number_given))
-#min_number_str = str(min(number_given))
 
 while (number_given > 1 or number_given < 1):
       print("syötä mikä tahansa numero paitsi 1, niin jatkan:")
       number_given = int(input("Anna minulle kokonaisluku"))
 
-#print ("suurin luku oli: 10")
-#, "pienin luku oli:" min_str)
 
 print ("Leikki loppui tähän, nyt pitää keksiä miten min ja max käyttäytyy")
 
