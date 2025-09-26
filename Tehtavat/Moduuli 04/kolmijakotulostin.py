@@ -7,7 +7,6 @@ Max_number = 998
 while number < Max_number:
     number += 3
     print(number)
-
     #= 0 and number <= 1000:
 
 

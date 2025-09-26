@@ -10,7 +10,6 @@ while (number_given > 1 or number_given < 1):
       print("syötä mikä tahansa numero paitsi 1, niin jatkan:")
       number_given = int(input("Anna minulle kokonaisluku"))
 
-
 #print ("suurin luku oli: 10")
 #, "pienin luku oli:" min_str)
 
