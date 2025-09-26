@@ -4,7 +4,7 @@
 # kuhan takaisin järveen ilmoittaen samalla käyttäjälle,
 # montako senttiä alimmasta sallitusta pyyntimitasta puuttuu.
 # Kuha on alamittainen, jos sen pituus on alle 37 cm.
-import math
+
 kuhanpituus = input("Kerropa sentteinä kuinka pitkän kuhan sait!")
 kuhanpituus_int =int(kuhanpituus)
 kasvuvara = (37 - kuhanpituus_int)
