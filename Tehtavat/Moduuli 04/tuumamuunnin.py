@@ -10,4 +10,4 @@ while tuuma > 0:
     tuuma = int(input("annapa minulle toinen pituus. Jos haluat lopettaa, anna negatiivinen luku"))
 
 
-print ("Tuumat eivät voi olla negatiivisia, nyt lopetettiin")
+print ("Tuumakaan ei voi olla negatiivinen, kiitos kun käytit minua!")
