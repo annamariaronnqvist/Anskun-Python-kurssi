@@ -7,7 +7,7 @@ tuuma_cm = 2.54
 
 while tuuma > 0:
     print ("pituus tuumina on:" f"{tuuma / tuuma_cm:.2f}")
-    tuuma = int(input("annapa minulle toinen pituus"))
+    tuuma = int(input("annapa minulle toinen pituus. Jos haluat lopettaa, anna negatiivinen luku"))
 
 
-print ("nyt laskin kaikki antamasi senttipituudet tuumaksi")
+print ("Tuumat eivät voi olla negatiivisia, nyt lopetettiin")
