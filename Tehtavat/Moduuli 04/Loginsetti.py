@@ -19,7 +19,7 @@ count = 0
 #seuraavaksi tarkistetaan syöte vasten oikeita tietoja.
 #epätosi on kun tunnus ja salasana kummatkin tai jompikumpi ei täsmää
 
-while tunnus != oikeatunnus_str or salasana != oikeasalasana_str:
+while tunnus != oikeatunnus_str or salasana != oikeasalasana_str and count < 6:
     if tunnus != oikeatunnus_str:
         print("väärä käyttäjätunnus")
         #pyydetään käyttäjää antamaan tiedot uudelleen
@@ -31,7 +31,21 @@ while tunnus != oikeatunnus_str or salasana != oikeasalasana_str:
         # pyydetään käyttäjää antamaan tiedot uudelleen
         tunnus = str(input("Syötä käyttäjätunnuksesi"))
         salasana = str(input("Syötä salasanasi"))
-    continue
-
+#lisätään yritysten määrää
+    count = count + 1
+    #tulostetaan nähtäville kuinka mones yritys
+    print((count),". yritys")
+    #jos yritysten määrä on 5 (eli kun tuloste on jostain syystä 4 :), evätään pääsy
+    if count > 4:
+        print("Pääsy evätty")
+        break
 print("Tervetuloa!")
+
+#else:
+#    print("Pääsy evätty")
+
+
+
+
+
 
