@@ -23,19 +23,23 @@ import math
 import random
 testimaara = int(input("kuinka monta pistettä testataan?"))
 #määritellään x ja y
-x = random.randint(-1,1)
-y = random.randint(-1,1)
+x = random.random()
+y = random.random()
 
 #todetaan, että laskenta alkaa 0
 count = 0
 #määritellään, että nB on koordinaatti
-nB = (x,y)
+nB = float(x) and float(y)
+A = float(x) and float(y)
+PI = float(math.pi)
 #testataan
-while x**2+y**2<1:
-    if nB < pi**2:
+while x**2+y**2<1 and count <=testimaara:
+    if ((x<1 and x>-1) and (y<1 and y>-1)):
+        print (x,y)
         count = count + 1
-    if count <= testimaara:
-        continue
-else:
-        print(count)
+    continue
 
+print(4*nB*testimaara)
+print(A*(PI/4))
+
+#ihan ei vielä olla tässä algoritmin ytimessä :)
