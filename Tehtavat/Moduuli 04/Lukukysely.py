@@ -2,7 +2,7 @@
 # kunnes tämä syöttää tyhjän merkkijonon lopetusmerkiksi.
 # Lopuksi ohjelma tulostaa saaduista luvuista pienimmän ja suurimman.
 
-number_given = (input("Anna minulle kokonaisluku"))
+number_given = (str(input("Anna minulle kokonaisluku")))
 end_code = "loppu"
 
 while (number_given != end_code):
