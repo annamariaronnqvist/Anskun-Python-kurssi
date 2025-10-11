@@ -10,14 +10,16 @@
 luku = int(input("Anna minulle kokonaisuluku"))
 
 #testaillaan mitä pitää olla totta, jotta ollaan alkuluku
-while luku <=1 or luku%2 == 0 and luku != 2:
+while (luku <=1 or luku % 2 == 0 or luku % 3 == 0 or luku % 4 == 0) and luku != 2:
     print("luku on kokonaisuluku, mutta ei alkuluku")
-    #meni infinite looppiin, jos testi on heti totta. siksi laitetaan tauko
     break
 #mikäli luku on alkuluku, niin sitten tuo looginen testi ei ole totta
 else:
     print("Hiphei, tämähän on alkuluku, ruotsiksi primtal")
 
-# seuraavaksi pitää hiffata miten saan tuon alkuluvun tunnistettua, donessa!
-# Nyt mentiin infinite looppiin
-# laitoin breakin, niin toimii :)
+#
+
+# seuraavaksi pitää hiffata miten saan tuon alkuluvun tunnistettua myös suuriin
+# lukuihin, pitäsi tehdä lista, jota tuo testi testaa, eli jakojäännös
+# kun jaetaan millä tahansa numerolla paitsi yhdellä, pitäisi olla nolla)
+# pienemmät luvut toimii, isot ei, donessa!
