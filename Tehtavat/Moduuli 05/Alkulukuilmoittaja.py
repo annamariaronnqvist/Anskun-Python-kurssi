@@ -6,3 +6,18 @@
 # luvuilla 1 ja 13 siten, että jako menee tasan.
 # Toisaalta esimerkiksi luku 21 ei ole alkuluku, koska se voidaan
 # jakaa tasan myös luvulla 3 tai luvulla 7.
+
+luku = int(input("Anna minulle kokonaisuluku"))
+
+#testaillaan mitä pitää olla totta, jotta ollaan alkuluku
+while luku <=1 or luku%2 == 0 and luku != 2:
+    print("luku on kokonaisuluku, mutta ei alkuluku")
+    #meni infinite looppiin, jos testi on heti totta. siksi laitetaan tauko
+    break
+#mikäli luku on alkuluku, niin sitten tuo looginen testi ei ole totta
+else:
+    print("Hiphei, tämähän on alkuluku, ruotsiksi primtal")
+
+# seuraavaksi pitää hiffata miten saan tuon alkuluvun tunnistettua, donessa!
+# Nyt mentiin infinite looppiin
+# laitoin breakin, niin toimii :)
