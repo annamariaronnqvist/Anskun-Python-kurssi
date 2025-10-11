@@ -21,3 +21,5 @@ for numbers in kuutiosilmat:
     break
 
 print(sum(kuutiosilmat))
+
+#submitted
