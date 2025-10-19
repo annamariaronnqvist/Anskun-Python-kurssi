@@ -7,20 +7,40 @@
 # Toisaalta esimerkiksi luku 21 ei ole alkuluku, koska se voidaan
 # jakaa tasan myös luvulla 3 tai luvulla 7.
 
-lukulista = [2,536870912]
-luku = int(input("Anna minulle kokonaisuluku"))
-uusi_lukulista = []
+import math
+luku = int(input("Anna minulle kokonaisuluku" ))
+maxluku = math.sqrt(luku)
+lukulista = []
 
-for luku in lukulista:
-    if luku % lukulista [:] == 0:
-        append.uusi_lukulista(luku)
+testilista = [maxluku]
+testilista.append(lukulista)
+
+print(testilista)
+print(maxluku)
+print(lukulista)
+
+lukulista.append(2)
+lukulista.append(3)
+lukulista.append(5)
+lukulista.append(7)
+lukulista.append(9)
+lukulista.append(11)
+lukulista.append(13)
+
+print(*lukulista)
+
+if lukulista < testilista:
+    print("luku on alkuluku")
 else:
-    print("luku on kokonaisuluku")
+    print("luku ei ole alkuluku")
 
-#list = [2,4,8]
-#new_list = [x//2 for x in list]
-#print(new_list)
+#        print("luku ei ole alkuluku")
+ #   else:
+  #      print("luku on alkuluku")
 
-#myList = [10,20,30,40,50,60,70,80,90]
-#myInt = 10
-#newList = [x / myInt for x in myList]
+#for testiluku in lukulista:
+#    if luku % lukulista() == 0:
+#        print ("luku on alkuluku")
+
+#    else:
+#        print ("luku ei ole alkuluku")
