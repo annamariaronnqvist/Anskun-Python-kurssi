@@ -6,25 +6,30 @@
 # ja for/in toistorakennetta niiden läpikäymiseen.
 
 kaupunkilista = []
-kaupunki = str(input("anna eka nimi tai lopeta Enterillä"))
-count = 1
+kaupunki = (input("anna eka kaupunkinimi, kerään niitä viisi "))
 
-for kaupunki in kaupunkilista:
-    while count < 6:
+kaupunkilista.append(kaupunki)
+for kaupunki in range(4):
+        kaupunki = input("anna uusi kaupunkinimi ")
         kaupunkilista.append(kaupunki)
-        count += 1
-    kaupunki = input("anna uusi kaupunkinimi")
+for kaupunki in kaupunkilista:
+    print(kaupunki)
 
-print("tässä on mainitsemasi viisi kaupunkia: ", kaupunkilista) # "\n")
+#committed
 
-kaupunkilista = []
-kaupunki = input("anna eka nimi tai lopeta Enterillä")
 
-while kaupunki!= "":
-    kaupunkilista.append(kaupunki)
-    kaupunki = input("anna nyt taas jokin kaupunkinimi nimi tai lopeta Enterillä")
 
-print(kaupunkilista)
+#kokeilin tähtihommaa, mutta ei toiminut: print ("tässä on lista kaupungeista:", *(kaupunkilista))
+
+#eka ohjelma alla. ei toimi niinkuin pitää
+#kaupunkilista = []
+#kaupunki = input("anna eka nimi tai lopeta Enterillä")
+
+#while kaupunki!= "":
+#    kaupunkilista.append(kaupunki)
+#    kaupunki = input("anna nyt taas jokin kaupunkinimi nimi tai lopeta Enterillä")
+
+#print(kaupunkilista)
 
 #nyt kysytään kaupunkeja, mutta väärällä metodilla.
 #pitää saada loppumaan viiden jälkeen ja sitten vielä kolumniksi, hihi
