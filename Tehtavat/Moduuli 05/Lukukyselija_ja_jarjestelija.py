@@ -15,7 +15,11 @@ while luku!= "":
     #pyydetään lisää lukuja
     luku = input("anna minulle toinen luku, tai jos haluat lopettaa paina enter")
     #järjestellään lista suurimmasta pienimpään
-    lukulista.sort(reverse=True)
+    (lukulista.sort(reverse=True))
 
 print(lukulista)
+
 #submitted
+# pojan kanssa testailtiin, niin 10 ei toimi, eli vaikka syöte on lukuja,
+# niin se ymmärretään stringeinä ja silloin 1, 10 ja 103 ovat perääkäisiä
+# eli melkein kokonaan ja oikein, mutta ei ihan :(
