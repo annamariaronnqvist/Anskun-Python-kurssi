@@ -14,7 +14,8 @@ while (luku == 1 or luku == 2 or luku == 3):
     print ("Tiesit jo, tämä on alkuluku")
     break
 else:
-    while (luku % 2 == 0 or luku % 3 == 0 or luku % 4 == 0):
+    while (luku % (1;536870912) == 0):
+#or luku % 3 == 0 or luku % 4 == 0):
         print("luku on kokonaisuluku, mutta ei alkuluku")
         break
 #mikäli luku on alkuluku, niin sitten tuo looginen testi ei ole totta
