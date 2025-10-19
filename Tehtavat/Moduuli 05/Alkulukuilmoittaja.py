@@ -8,17 +8,72 @@
 # jakaa tasan myös luvulla 3 tai luvulla 7.
 
 luku = int(input("Anna minulle kokonaisuluku"))
+jakaja = 2
 
-#testaillaan mitä pitää olla totta, jotta ollaan alkuluku
+#kerrataan ensin pienet alkuluvut, niin ei tarvitse ottaa niihin kantaa myöhemmin
 while (luku == 1 or luku == 2 or luku == 3):
-    print ("Tiesit jo, tämä on alkuluku")
+    print ("Tiesit jo, tämä on alkuluku, ja ykkönen on määrittelemätön")
     break
 else:
-    while (luku % (1;536870912) == 0):
-#or luku % 3 == 0 or luku % 4 == 0):
-        print("luku on kokonaisuluku, mutta ei alkuluku")
-        break
-#mikäli luku on alkuluku, niin sitten tuo looginen testi ei ole totta
+
+if luku % jakaja == 0:
+    print("luku ei ole alkuluku")
+
+
+
+#    while luku % jakaja == 0:
+#jos jakojäännös on nolla
+#        print("luku on kokonaisuluku, mutta ei alkuluku")
+#        break
+
+    jakaja = jakaja + 2
+    while True (luku % jakaja == 0):
+            print("luku on kokonaisuluku, mutta ei alkuluku")
+            break
+
+    jakaja = jakaja + 3
+    while True(luku % jakaja == 0):
+            print("luku on kokonaisuluku, mutta ei alkuluku")
+            break
+
+    jakaja = jakaja + 4
+    while True(luku % jakaja == 0):
+                print("luku on kokonaisuluku, mutta ei alkuluku")
+                break
+
+    jakaja = jakaja + 5
+    while True(luku % jakaja == 0):
+                print("luku on kokonaisuluku, mutta ei alkuluku")
+                break
+
+    jakaja = jakaja + 6
+    while True(luku % jakaja == 0):
+                print("luku on kokonaisuluku, mutta ei alkuluku")
+                break
+
+    jakaja = jakaja + 7
+    while True(luku % jakaja == 0):
+                print("luku on kokonaisuluku, mutta ei alkuluku")
+                break
+
+    jakaja = jakaja + 8
+    while True(luku % jakaja == 0):
+                print("luku on kokonaisuluku, mutta ei alkuluku")
+                break
+
+    jakaja = jakaja + 9
+    while True(luku % jakaja == 0):
+                print("luku on kokonaisuluku, mutta ei alkuluku")
+                break
+
+    jakaja = jakaja + 10
+    while True(luku % jakaja == 0):
+                print("luku on kokonaisuluku, mutta ei alkuluku")
+                break
+
+# mikäli jokin jako 2-10 on totta, niin luku ei ole alkuluku, eli jos mikään
+# ylläolevista ei ole totta, niin luku on alkuluku
+
     else:
         print("Hiphei, tämähän on alkuluku, ruotsiksi primtal")
 
