@@ -29,8 +29,9 @@ lukulista.append(13)
 
 print(*lukulista)
 
-if lukulista < testilista:
-    print("luku on alkuluku")
+for luku in lukulista:
+    if luku % (int(lukulista)) == 0:
+        print("luku on alkuluku")
 else:
     print("luku ei ole alkuluku")
 
