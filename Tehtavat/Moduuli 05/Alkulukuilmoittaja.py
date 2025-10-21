@@ -8,24 +8,36 @@
 # jakaa tasan myös luvulla 3 tai luvulla 7.
 
 luku = int(input("Annatko minulle kokonaisuluvun "))
-jakaja = 2
-#True = luku/luku == 1 and luku % jakaja != 0
+jakaja = 3
 
 #kerrataan ensin pienet alkuluvut, niin ei tarvitse ottaa niihin kantaa myöhemmin
-if (luku == 1 or luku == 2 or luku == 3):
-    print ("Tiesit jo, tämä on alkuluku, ja ykkönen on määrittelemätön")
 
+if (luku == 1 or luku == 2 or luku == 3 or luku == 5 or luku == 7):
+    print ("Tiesit jo, tämä on alkuluku")
+
+#kaikki kahdella jaolliset eivät ole alkulukuja, loppuu tähän jos totta
+
+elif luku % 2 == 0:
+    print ("Tämä ei ole alkuluku")
+
+#testataan muut luvut
 else:
-    while jakaja^2 <= luku and luku % jakaja == 0:
-            print("luku ei ole alkuluku")
-            jakaja += 1
-            break
-    else:
-        print("tämä on alkuluku")
+# kun jakaja potenssiin on pienempi kuin luku, ja jakojäännös on nolla kun luku jaetaan jakajalla
+# on luku alkuluku. Aloitetaan testi kolmosesta, koska erikoistapaukset käsitelty yllä
 
-# seuraavaksi pitää hiffata miten saan tuon alkuluvun tunnistettua > 8
-# lukuihin, pitäsi ehkä tehdä lista, jota tuo testi testaa, eli jakojäännös
-# kun jaetaan millä tahansa numerolla paitsi yhdellä, pitäisi olla nolla)
-# pienemmät luvut toimii, 1-3 poikkeuksena, pikkuhiljaa eteenpäin
-# googlen perusteella voisi testailla matemaattisesti tätä myös, mutta pitää
-# hiffata ensin se
+    while jakaja*jakaja <= luku:
+        if luku % jakaja == 0:
+            print("luku ei ole alkuluku")
+
+        else:
+            print("tämä on alkuluku")
+
+# lisätään looppiin aina pari lisää, niin testailee kaikki ei parilliset, parilliset
+# testattiin jo poislukevasti yllä
+
+        jakaja += 2
+
+        break
+
+# committed
+
