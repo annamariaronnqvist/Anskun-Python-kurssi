@@ -16,5 +16,3 @@ print ("Päivää alkaa tervehdyksillä.")
 tervehdi(5)
 print("tervehditään lisää")
 tervehdi(2)
-
-def (vaihda())
