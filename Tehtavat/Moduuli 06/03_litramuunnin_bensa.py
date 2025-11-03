@@ -5,15 +5,24 @@
 # Muuntamista jatketaan siihen saakka, kunnes käyttäjä syöttää negatiivisen gallonamäärän.
 # Yksi gallona on 3,785 litraa.
 
+#pyydetään ensin bensan määrä
+
 bensat = int(input("anna bensamäärä "))
+
+#määritellään funktio ja sen parametri
 def galloona(bensat):
 
+#määritellään funktion toiminto ja ehdot
     while bensat > 0:
         print(f"{bensat * 3.785:.2f}")
-        break
+        bensat = int(input("anna toinen litramäärä "))
+
     else:
         print("Kiitos kun käytit bensamuunninta")
 
         return
+#ajetaan funktio
 
 galloona(bensat)
+
+#committed
