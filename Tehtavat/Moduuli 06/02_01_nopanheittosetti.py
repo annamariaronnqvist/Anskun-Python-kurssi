@@ -18,7 +18,8 @@ def arvanheitto():
     return
 
 print ("arvotaan lukuja kunnes saadaan kuutonen")
-if silmaluku < 6:
+if silmaluku != 6:
     arvanheitto()
+
 else:
     print ("nyt tuli kutonen")
