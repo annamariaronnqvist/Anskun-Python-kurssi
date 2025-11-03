@@ -16,9 +16,10 @@ silmaluku = random.randint(1,6)
 
 def arvanheitto():
     print("arvotaan lukuja kunnes saadaan kuutonen")
+    print(silmaluku)
+
     return
 
-silmaluku = 0
 arpaheitto = 0
 
 while silmaluku != 6:
@@ -29,3 +30,4 @@ while silmaluku != 6:
 else:
     print("nyt loppui kun tuli kutonen")
 
+arvanheitto()
