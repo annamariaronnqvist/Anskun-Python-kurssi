@@ -5,11 +5,17 @@
 
 kokonaislukulista = []
 
-def lukupalauttaja():
+#määritellään funktio
+
+def lukupalauttaja(kokonaislukulista):
     kokonaisluku = int(input("Anna minulle kokonaisuluku, enter lopettaa "))
+#annetaan ehdot, lisätään lukuja käyttäjän haluaman mukaisesti
 
     while kokonaisluku != "":
+    #lisäillään listaan käytääjän määrittelemät luvut
         kokonaislukulista.append(kokonaisluku)
+    #summataan listan luvut, on nyt kumulatiivinen
+        print(sum(kokonaislukulista))
         kokonaisluku = int(input("Anna minulle kokonaisuluku, enter lopettaa "))
 
     else:
@@ -17,4 +23,6 @@ def lukupalauttaja():
 
     return
 
-lukupalauttaja()
+lukupalauttaja([kokonaislukulista])
+
+#Module 6, tehtävä 4. Funktio lähtee rakentamaan listaa. Sitten feilaa.
