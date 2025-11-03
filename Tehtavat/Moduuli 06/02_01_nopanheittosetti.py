@@ -14,12 +14,13 @@ import random
 silmaluku = random.randint(1,6)
 
 def arvanheitto():
-    print(silmaluku)
+    print("arvotaan lukuja kunnes saadaan kuutonen")
+
     return
 
-print ("arvotaan lukuja kunnes saadaan kuutonen")
 if silmaluku != 6:
     arvanheitto()
-
+    print(silmaluku)
 else:
-    print ("nyt tuli kutonen")
+    print("nyt tuli kutonen")
+
