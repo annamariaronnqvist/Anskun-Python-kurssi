@@ -8,3 +8,17 @@
 # esimerkiksi 21-tahkoista roolipelinoppaa. Edellisestä tehtävästä
 # poiketen nopan heittelyä jatketaan pääohjelmassa kunnes saadaan nopan
 # maksimisilmäluku, joka kysytään käyttäjältä ohjelman suorituksen alussa.
+
+import random
+
+silmaluku = random.randint(1,6)
+
+def arvanheitto():
+    print(silmaluku)
+    return
+
+print ("arvotaan lukuja kunnes saadaan kuutonen")
+if silmaluku < 6:
+    arvanheitto()
+else:
+    print ("nyt tuli kutonen")
