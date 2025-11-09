@@ -9,7 +9,7 @@
 # lentoaseman yksilöivä tunniste. Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi
 # on EFHK. Löydät koodeja helposti selaimen avulla.)
 
-lentoasema = input(str("Haluatko uuden lentoaseman?"))
+lentoasema = input(str("Kerropa lentoaseman nimi?"))
 lentoasemalista = []
 count = 0
 
