@@ -9,13 +9,18 @@
 # lentoaseman yksilöivä tunniste. Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi
 # on EFHK. Löydät koodeja helposti selaimen avulla.)
 
-lentoasema = input(str("Haluatko uuden lentoaseman?"))
+lentoasema = input(str("Kerropa lentoaseman nimi: "))
 lentoasemalista = []
 count = 0
 
-while count < 10:
+while count < 10 and lentoasema != "":
     lentoasemalista.append(lentoasema)
-    lentoasema = input(str("Anna toisen lentoaseman nimi"))
+    lentoasema = input(str("Anna toisen lentoaseman nimi: "))
     count +=1
 else:
-    print (lentoasemalista)
+    for lentoasema in lentoasemalista:
+        print (lentoasema)
+
+    #aloitettu, nyt pitää rakentaa listaa, hakea olemassa olevaa tietoa ja tehdä jokintietokanta
+    # githubista löytyy tämä:
+    # https: // github.com / ip2location / ip2location - iata - icao / blob / master / iata - icao.csv
